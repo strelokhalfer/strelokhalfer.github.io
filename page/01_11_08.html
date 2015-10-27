@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" id="main">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" id="main">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Local Server Setup</title>
+	<title>Настройка локального сервера</title>
 	<link rel="stylesheet" href="../inc/css/style.min.css" />
 	<script type="text/javascript" src="../inc/js/lib/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../inc/js/common.js"></script>
@@ -10,13 +10,13 @@
 <body>
 
 	<div class="main">
-	  <h1 class="main__title--h1 main__title--h1--v06">Local Server Setup</h1>
+	  <h1 class="main__title--h1 main__title--h1--v06">Настройка локального сервера</h1>
 	  <ul class="breadcrumb">
 	    <li><a href="01.html">RPG Maker MV</a></li>
 		  <li>&gt;</li>
-		  <li>Documentation</li>
+		  <li>Документация</li>
 		  <li>&gt;</li>
-			<li>Local Server Setup</li>
+			<li>Настройка локального сервера</li>
 	  </ul>
 
 
@@ -46,7 +46,7 @@
 		  <h3 class="main__title--h3">Install Location of Files</h3>
 		  <p>A folder for a local server will be automatically created when Internet Information Services is enabled. Place the project folder inside this folder.</p>
 		  <ol class="main__ol">
-				<li>Click [This PC] → [Local Disk C:].
+				<li>Click [This PC] в†’ [Local Disk C:].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img04.png" width="524" height="136" alt="" />
 			</div>
@@ -54,32 +54,32 @@
 				<li>Open the "wwwroot" folder found in the "inetpub" folder.</li>
 				<li>Place the project folder inside the "wwwroot" folder.</li>
 		  </ol>
-		  <h3 class="main__title--h3">Accessing From Your Browser</h3>
+		  <h3 class="main__title--h3">Заходим на локальный сервер через браузер</h3>
 		  <ol class="main__ol">
-		    <li>Open your browser.</li>
-		    <li>Confirm by entering the address below into the address bar.<br />
-		      http://&lt;IP Address&gt;/Project Folder Name/<br />
-		      or<br />
-		      http://&lt;Computer Name&gt;/Project Folder Name/<br />
-		      or<br />
-		      http://localhost/Project Folder Name/<br />
+		    <li>Откройте ваш браузер.</li>
+		    <li>Введите в адрессной строке:<br />
+		      http://&lt;IP адресс&gt;/Папка проекта/<br />
+		      или<br />
+		      http://&lt;Имя компьютера&gt;/Папка проекта/<br />
+		      или<br />
+		      http://localhost/Папка проекта/<br />
   <br />
-		      Ex.) http://192.168.0.1/Project Folder Name/ </li>
+		      Пример: http://192.168.0.1/MyGame/ </li>
 		  </ol>
-		  <h3 class="main__title--h3">Finding the Computer Name</h3>
+		  <h3 class="main__title--h3">Узнаём имя компьютера</h3>
 		  <ol class="main__ol">
-				<li>Open the applicable folder window, and right-click [This PC] in the sidebar and click [Properties].
+				<li>Щелкните правой кнопкой мыши по [Мой компьютер], выберите [Свойства].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img05.png" width="431" height="304" alt="" />
 			</div>
 				</li>
-				<li>Find your computer's name next to [Computer name:] located under [Computer name, domain, and workgroup settings] section in the [System] window.
+				<li>FИмя вашего ПК будет отображено в строке [Имя компьютера:], расположенной в разделе [Имя компьютера, имя домена и параметры рабочей группы], секции [Общее].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img06.png" width="376" height="131" alt="" />
 			</div>
 				</li>
 			</ol>
-		  <h3 class="main__title--h3">Finding Your IP Address</h3>
+		  <h3 class="main__title--h3">FУзнаём ваш IP адресс</h3>
 		  <ol class="main__ol">
 			  <li>Click [View network status and tasks] in the [Control Panel].
 <div class="al-c mt5px mb30px">
@@ -105,22 +105,22 @@
 		  <h3 class="main__title--h3">Setting up localhost</h3>
 		  <p>To access http://localhost/ in your browser, you need to configure the "hosts" file.</p>
 		  <ol class="main__ol mb50px">
-				<li>Click the [Start] button, and go to [All Programs] → [Accessories]. Right-click [Notepad] and click [Run as Administrator].
+				<li>Click the [Start] button, and go to [All Programs] в†’ [Accessories]. Right-click [Notepad] and click [Run as Administrator].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img11.png" width="490" height="583" alt="" />
 			</div>
 				</li>
-				<li>Go to [File] → [Open] in Notepad, and go to "C:\Windows\System32\drivers\etc". Select "All Files" and open the "hosts" file.
+				<li>Go to [File] в†’ [Open] in Notepad, and go to "C:\Windows\System32\drivers\etc". Select "All Files" and open the "hosts" file.
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img12.png" width="960" height="540" alt="" />
 			</div>
 				</li>
 				<li>Change the location below in the file and save the file.<br />
-■Before
+в– Before
 <pre class="main__pre--code">
 #   127.0.0.1       localhost
 </pre>
-■After
+в– After
 <pre class="main__pre--code">
 127.0.0.1       localhost
 </pre>
