@@ -21,38 +21,39 @@
 
 
 		<div class="main__section" id="p01">
-		  <p>For reasons related to security, it is not possible to open the index.html file in the project folder by opening it directly in a browser. <br />
-		    You must set up a local server inside your computer. This section will explain how to do so.</p>
-		  <h2 class="main__title--h2">Local Server Setup on Windows</h2>
-		  <h3 class="main__title--h3">Enabling Internet Information Service</h3>
+		  <p>По причине безопасности, запустить index.html с вашего компьютера не получится. <br />
+		    Вам нужно будет поднять локальный сервер, и мы объясним как.</p>
+		  <h2 class="main__title--h2">Локальный сервер на Windows</h2>
+		  <h3 class="main__title--h3">Включаем Internet Information Service(IIS)</h3>
+		  *Возможно потребуется перезагрузка и установочный диск с Windows.
 		  <ol class="main__ol">
-				<li>Click [Programs] in the [Control Panel].
+				<li>Щелкните [Программы] в [Панель управления].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img01.png" width="627" height="415" alt="" />
 			</div>
 				</li>
-				<li>Click [Turn Windows features on or off].
+				<li>Щелкните [Включение или отключение компонентов Windows].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img02.png" width="605" height="92" alt="" />
 			</div>
 				</li>
-				<li class="mb30px">In the [Windows Features] window, click [Internet Information Services] to enable it.
+				<li class="mb30px">В окне [Компоненты Windows] активируйте пункт [Службы IIS] (что бы стояла галочка).
 <div class="al-c mt5px">
 				<img src="../inc/img/01_11_08_img03.png" width="786" height="450" alt="" />
 			</div>
-*Not checked but filled in </li>
-				<li>Click [OK].</li>
+*Квадрат означает, что выбраны не все компоненты. </li>
+				<li>Щелкните [ОК].</li>
 		  </ol>
-		  <h3 class="main__title--h3">Install Location of Files</h3>
-		  <p>A folder for a local server will be automatically created when Internet Information Services is enabled. Place the project folder inside this folder.</p>
+		  <h3 class="main__title--h3">Добавляем файлы в локальный сервер.</h3>
+		  <p>Папка для веб-сервера создастся автоматически, при включении IIS. Вам просто нужно скопировать в эту папку папку вашего проекта.</p>
 		  <ol class="main__ol">
-				<li>Click [This PC] в†’ [Local Disk C:].
+				<li>В [Мой компьютер] откройте [Локальный диск C:].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img04.png" width="524" height="136" alt="" />
 			</div>
 				</li>
-				<li>Open the "wwwroot" folder found in the "inetpub" folder.</li>
-				<li>Place the project folder inside the "wwwroot" folder.</li>
+				<li>Откройте папку "wwwroot", расположенную внутри папки "inetpub".</li>
+				<li>Скопируйте папку проекта в папку "wwwroot".</li>
 		  </ol>
 		  <h3 class="main__title--h3">Заходим на локальный сервер через браузер</h3>
 		  <ol class="main__ol">
@@ -73,83 +74,85 @@
 				<img src="../inc/img/01_11_08_img05.png" width="431" height="304" alt="" />
 			</div>
 				</li>
-				<li>FИмя вашего ПК будет отображено в строке [Имя компьютера:], расположенной в разделе [Имя компьютера, имя домена и параметры рабочей группы], секции [Общее].
+				<li>Имя вашего ПК будет отображено в строке [Имя компьютера:], расположенной в разделе [Имя компьютера, имя домена и параметры рабочей группы], секции [Общее].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img06.png" width="376" height="131" alt="" />
 			</div>
 				</li>
 			</ol>
-		  <h3 class="main__title--h3">FУзнаём ваш IP адресс</h3>
+		  <h3 class="main__title--h3">Узнаём ваш IP адресс</h3>
+		  *Полезно для тех, у кого роутер. Для прочих лучше использовать 127.0.0.1
 		  <ol class="main__ol">
-			  <li>Click [View network status and tasks] in the [Control Panel].
+			  <li>Щелкните [View network status and tasks] in the [Control Panel].
 <div class="al-c mt5px mb30px">
 				  <img src="../inc/img/01_11_08_img07.png" width="636" height="348" alt="" />
 			  </div>
 				</li>
-				<li>Click [Connections: Local Area Connection] in the network connection status window.
+				<li>Щелкните [Connections: Local Area Connection] in the network connection status window.
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img08.png" width="583" height="79" alt="" />
 			</div>
 				</li>
-				<li>Click [Details] in the local area connection status window that appears.<br />
+				<li>Щелкните [Details] in the local area connection status window that appears.<br />
 				  <div class="al-c mt5px mb30px">
 						<img src="../inc/img/01_11_08_img09.png" width="435" height="231" alt="" />
 					</div>
 				</li>
-				<li>The number found next to [IPv4 Address] is your IP address.
+				<li>Цифры, указанные в строке [IPv4 адрес] и есть ваш локальный ip адрес.
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img10.png" width="258" height="49" alt="" />
 			</div>
 				</li>
 			</ol>
-		  <h3 class="main__title--h3">Setting up localhost</h3>
-		  <p>To access http://localhost/ in your browser, you need to configure the "hosts" file.</p>
+		  <h3 class="main__title--h3">Настраиваем localhost</h3>
+		  *Как правило, уже настроено.
+		  <p>Для доступа к серверу по http://localhost/ в браузере, вам нужно настройть "hosts" файл.</p>
 		  <ol class="main__ol mb50px">
-				<li>Click the [Start] button, and go to [All Programs] в†’ [Accessories]. Right-click [Notepad] and click [Run as Administrator].
+				<li>Откройте [Пуск], Выберите [Все программы], [Стандартные]. Щелкните правой кнопкой мыши по [Блокнот] и выберите [Запустить от Администратора].
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img11.png" width="490" height="583" alt="" />
 			</div>
 				</li>
-				<li>Go to [File] в†’ [Open] in Notepad, and go to "C:\Windows\System32\drivers\etc". Select "All Files" and open the "hosts" file.
+				<li>Выберите в меню [Файл] действие [Открыть] и перейдите в "C:\Windows\System32\drivers\etc". Выберите "Все файлы" и откройте файл "hosts".
 <div class="al-c mt5px mb30px">
 				<img src="../inc/img/01_11_08_img12.png" width="960" height="540" alt="" />
 			</div>
 				</li>
-				<li>Change the location below in the file and save the file.<br />
-в– Before
+				<li>Измените строку как указано ниже(или добавтье, если отсутствует).<br />
+До
 <pre class="main__pre--code">
 #   127.0.0.1       localhost
 </pre>
-в– After
+После
 <pre class="main__pre--code">
 127.0.0.1       localhost
 </pre>
 				</li>
-				<li>Restart Windows. </li>
+				<li>Перезапустите Windows. </li>
 		  </ol>
-		  <h2 class="main__title--h2">Mac OSX Local Server Setup</h2>
-		  <p>Apache is installed by default on Macs. You can use a local server by running Apache.</p>
-		  <h3 class="main__title--h3">Apache Basic Controls</h3>
-		  <p>Enter commands into the terminal, and run Apache.</p>
-		  <h3 class="main__title--h3--sub">Running Apache</h3>
+		  <h2 class="main__title--h2">Настройка локального сервера на Mac OSX</h2>
+		  <p>Для создания локального сервера в Mac используется Apache(Апач), который как правило, уже установлен в системе.</p>
+		  <h3 class="main__title--h3">Базовые команды Apache</h3>
+		  <p>Команды водятся в Терминале.</p>
+		  <h3 class="main__title--h3--sub">Запускаем Apache</h3>
 		  <pre class="main__pre--code">
 $ sudo apachectl start
 </pre>
-		  <h3 class="main__title--h3--sub">Quitting Apache</h3>
+		  <h3 class="main__title--h3--sub">Останавливаем Apache</h3>
 		  <pre class="main__pre--code mb30px">
 $ sudo apachectl stop
 </pre>
-		  <h3 class="main__title--h3">Install Location of Files</h3>
-		  <p>Place the project folder in the location below.</p>
+		  <h3 class="main__title--h3">Устанавливайем файлы на сервер</h3>
+		  <p>Скопируйте папку проекта в папку по следующему пути:</p>
 		  <pre class="main__pre--code">
 /Library/WebServer/Documents
+П.п: проверить на русской локали.
 </pre>
-		  <p>* The project folder will be located in the location specified in [Location] when creating a new project and saving.</p>
-		  <h3 class="main__title--h3">Accessing From Your Browser</h3>
+		  <h3 class="main__title--h3">Играем через браузер</h3>
 		  <ol class="main__ol">
-		    <li>Open your browser.</li>
-		    <li>Confirm by entering the address below into the address bar.<br />
-			http://localhost/Project Folder Name/<br />
+		    <li>Откройте ваш браузер.</li>
+		    <li>Введите в адресную строку и подтвердите:<br />
+			http://localhost/ИмяПапкиПроекта/<br />
 		  </ol>
 		</div><!-- /main__section -->
 
