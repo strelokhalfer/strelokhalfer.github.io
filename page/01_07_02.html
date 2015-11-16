@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" id="main">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Map Data Controls</title>
+	<title>Данные карт</title>
 	<link rel="stylesheet" href="../inc/css/style.min.css" />
 	<script type="text/javascript" src="../inc/js/lib/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../inc/js/common.js"></script>
@@ -10,53 +10,53 @@
 <body>
 
 	<div class="main">
-	  <h1 class="main__title--h1 main__title--h1--v02">Map Data Controls</h1>
+	  <h1 class="main__title--h1 main__title--h1--v02">Данные карт</h1>
 	  <ul class="breadcrumb">
 	    <li><a href="01.html">RPG Maker MV</a></li>
 		  <li>&gt;</li>
-		  <li><a href="01_07.html">Maps</a></li>
+		  <li><a href="01_07.html">Карты</a></li>
 	    <li>&gt;</li>
-	    <li>Map Data Controls</li>
+	    <li>Данные карт</li>
 	  </ul>
-	  <p>Right-clicking Map Data items in the Map List allows you to do things such as configure/change and copy. The functions of each item are as follows.</p>
+	  <p>Вы можете управлять картами через список, расположенный в нижней левой части окна программы.</p>
 	  <div class="main__section">
-	    <h2 class="main__title--h2">Controls via the Context Menu</h2>
-	    <p>Right-clicking Map Data items in the Map List allows you to do things such as configure/change and copy. The functions of each item are as follows.</p>
+	    <h2 class="main__title--h2">Управление через контекстное меню</h2>
+	    <p>Если нажать правой кнопкой мыши на карту в списке, откроется меню с различными операциями, такими как:</p>
 	    <dl class="main__dl">
-		  <dt>Edit </dt>
-				<dd>Opens the Settings Window for map data. For more information regarding items that can be configured, please view [<a href="01_07_03.html">Map Properties</a>].</dd>
-				<dt>New</dt>
-				<dd>Adds new map data. For more information regarding items that can be configured, please view [<a href="01_07_03.html">Map Properties</a>].</dd>
-				<dt>Load</dt>
-				<dd>New map data is created based on sample data. Click the data name on the list in the window displayed, confirm the details and click [OK].
+		  <dt>Редактировать </dt>
+				<dd>Открывает окно настройки карты. Более подробную информацию о доступных настройках этого окна ищите в разделе [<a href="01_07_03.html">Параметры карты</a>].</dd>
+				<dt>Создать</dt>
+				<dd>Создает новую карту. Более подробную информацию о доступных настройках этого окна ищите в разделе<br> [<a href="01_07_03.html">Параметры карты</a>].</dd>
+				<dt>Загрузить</dt>
+				<dd>Создает новую карту по шаблону. Выберите шаблон карты, настройте его по своему усмотрению и нажмите [OK].
 <div class="al-c mt10px mb20px">
 				<img src="../inc/img/01_07_02_img01.png" width="704" height="531" alt="" />
 			</div>
 				</dd>
-				<dt>Copy</dt>
-				<dd>Copies map data to the clipboard.</dd>
-				<dt>Paste </dt>
-				<dd>Adds map data currently in the clipboard.</dd>
-				<dt>Delete</dt>
-				<dd>Deletes map data.</dd>
-				<dt>Shift </dt>
-				<dd>Shifts the placement of all tiles on the map. Specify the shift direction and number of tiles.</dd>
-				<dt>Generate Dungeon</dt>
-				<dd>Automatically generates a maze form map. Please refer to [<a href="01_05.html#p06">How to Use Support Tools</a>] for more information.</dd>
-				<dt>Save as Image</dt>
-				<dd>Saves the currently selected map in an image format.<br />
+				<dt>Копировать</dt>
+				<dd>Копирует карту в буфер.</dd>
+				<dt>Вставить </dt>
+				<dd>Вставляет данные карты, скопированые ранее командой "Копировать".</dd>
+				<dt>Удалить</dt>
+				<dd>Удаляет карту.</dd>
+				<dt>Сдвинуть </dt>
+				<dd>Сдвигает все тайлы карты. Необходимо задать направление и количество клеток для сдвига.</dd>
+				<dt>Генерировать подземелье</dt>
+				<dd>Генерирует лабиринт и рисует его на карте. Пройдите в раздел [<a href="01_05.html#p06">Как использовать вспомогательные<br>инструменты</a>] за более подробным описанием.</dd>
+				<dt>Сохранить как картинку</dt>
+				<dd>Сохраняет скриншот всей карты в виде картинки.<br />
 				</dd>
 			</dl>
 		</div><!-- /main__section -->
 
 		<div class="main__section">
-		  <h2 class="main__title--h2">Group Maps</h2>
+		  <h2 class="main__title--h2">Группировка карт</h2>
 		  <div class="al-c mt20px mb20px">
 				<img src="../inc/img/01_07_02_img04.png" width="256" height="319" alt="" />
 			</div>
-		  <p>By dragging map data in the Map List onto other map data, the data will appear under the latter map data. Just like grouping the interior map of a building under the map of a town, it is convenient for grouping map data and managing it. By dragging a map which has been moved to the bottom to the folder containing the project name, you can move it to the highest layer.<br />
+		  <p>Перетащив в списке одну карту на другую, вы можете сгруппировать их. При этом перетаскиваемая карта отобразится под целевой с небольшим отступом. Этот прием сильно облегчает управление списком. К примеру, вы можете сгруппировать карты интерьеров помещений с картой города, в котором эти помещения находятся. Перетащив карту на название проекта, вы можете убрать ее из группы<br />
 		    <br />
-		    This hierarchical display only changes the way that things are displayed on the Map List. This will in no way affect the design and settings of the map. </p>
+		    Эта иерархия карт служит только для удобства управления и восприятия и никак не влияет на дизайн или поведение карт. </p>
 		</div><!-- /main__section -->
 
 
