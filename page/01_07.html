@@ -14,44 +14,45 @@
 	  <ul class="breadcrumb">
 	    <li><a href="01.html">RPG Maker MV</a></li>
 		  <li>&gt;</li>
-		  <li>Maps</li>
+		  <li>Карты</li>
 		</ul>
 
 		<div class="main__section">
-		  <h2 class="main__title--h2">What are Maps?</h2>
-		  <p> Maps are the data that represent the setting for your game. Maps will unfold based on where a character moves on the map when playing the game.<br />
+		  <h2 class="main__title--h2">Что такое карта?</h2>
+		  <p> Карта - набор данных, описывающих сеттинг вашей игры. Карты создают атмосферу и окружение для игрока.<br />
 		    <br />
-		    A map's design is edited by placing together parts using for composing your map called "Tiles". </p>
+		    Карта строится путем комбинирования ее фрагментов, называемых "Тайлы". </p>
 		  <div class="al-c mb20px">
 				<img src="../inc/img/01_07_img01.png" height="940" width="1383" alt="" />
 			</div>
 		</div><!-- /main__section -->
 
 		<div class="main__section">
-		  <h2 class="main__title--h2">Map Basic Specifications</h2>
-		  <h3 class="main__title--h3--sub">Role of Tiles </h3>
-		  <p>Tiles are images which give a map its appearance, and are configured to allow or not allow a character to move across that tile.<br />
+		  <h2 class="main__title--h2">Основные понятия</h2>
+		  <h3 class="main__title--h3--sub">Значение тайлов </h3>
+		  <p>Тайлы - небольшие картинки, создающие облик карты и определяющие, может ли игрок пройти через определенную клетку карты.<br />
 		    <br />
-		    In one map, multiple tiles grouped together assigned to be one piece of data are called a "Tileset", which is used as the basis of designing the shape of a map. You can instantly change the appearance of a map by changing the tileset you are using. The contents of a tileset can be edited using the [<a href="01_08_10.html">Database</a>].</p>
-		  <h3 class="main__title--h3--sub">Tile Classifications </h3>
-		  <p>It is possible to include 5 types of tiles for A through E in one tileset. A is the lower layer which represents the terrain and ground, and B through E are upper layer tiles which represent surface elements such as trees and bushes or sign boards.<br />
+		    На отдельно выбранной карте, несколько тайлов объединяются в единую логическую единицу, называемую "Тайлсет", которая также является платформой для построения карт. Вы можете быстро изменить облик карты, просто сменив тайлсет. Содержимое тайлсета можно изменить из [<a href="01_08_10.html">Базы Данных</a>].</p>
+		  <h3 class="main__title--h3--sub">Виды тайлов </h3>
+		  <p>В одном тайлсете могут находиться 5 категорий тайлов, маркированые буквами от 'A' до 'E'.<br/>
+		  	'A' - самый нижний слой, отображающий землю и прочие поверхности, в то время, как тайлы групп с B по E отображают различные объекты, такие как: деревья, кусты, дорожные знаки и т. д.<br />
 		    <br />
-		    It is possible to place an upper layer and lower layer tile on the same location on the map. By using this two-layer composition, it is possible to create a very detailed and intricate map.<br />
+		    Таким образом, на одну клетку карты можно одновременно поместить как тайл нижнего уровня, так и верхнего. Благодаря этой возможности, мы можем создавать довольно детализированые и атмосферные карты.<br />
   <br />
-		    As a standard, tiles that represent things such as the ocean, grasslands, floors and walls are the lower layer tiles, and upper layer tiles used to decorate those layers are provided. <br />
-		    Moreover, it is now possible to overlap two types of upper layer tiles allowing for more variation in this version.</p>
+		    Настоятельно рекомендуется придерживаться стандарта, согласно которому, тайлы нижнего уровня изображают различные поверхности (луг, море, песок и т. д.), а тайлы верхнего уровня служат для их украшения. <br />
+		    Более того, теперь есть возможность складывать два тайла верхнего уровня, что позволяет создавать еще более впечатляющие карты.</p>
 		  &nbsp;
 		  <div class="al-c mb20px">
 			  <img src="../inc/img/01_07_img02.png" height="230" width="958" alt="" />
 			</div>
-		  <h3 class="main__title--h3--sub">Map Size and Display Method </h3>
-		  <p>The size of a map is measured in tiles, and can be set to have a width and height of 0 to 256 tiles respectively.<br />
+		  <h3 class="main__title--h3--sub">Размер карты и ее Отображение </h3>
+		  <p>Размер карты измеряется в количестве тайлов и может достигать 256 тайлов по-ширине и столько же по-высоте.<br />
 		    <br />
-		    The number of tiles visible on a game when playing is 17x13 tiles at one time. For maps larger than this, the area displayed will automatically move centered on the position of the player (scroll processing). Moreover, by connecting the edges of maps, you can have settings where the map loops just as if it was a planet (loop processing).</p>
-		  <h3 class="main__title--h3--sub">Map Positioning </h3>
-		  <p>The position of tiles on the map is represented in [Map Coordinates]. The origin of a map is at the upper left corner at (0,0), and moving away from this point X tiles to the right becomes the X coordinate, and moving away from this point Y tiles down becomes the Y coordinate. For example, in a map which has a tile size of 100x100, the coordinates of the bottom right corner is (99,99). The map coordinates of the tile which is currently being edited will appear in the status bar.<br />
+		    В процессе игры, видимая область карты составляет 17x13 тайлов. Если размер карты больше указанного, в процессе игры карта будет двигаться вместе с игроком (эффект прокрутки). Более того, если установить опцию "Соединить края", игрок сможет бегать по карте кругами, как по планете (эффект цикла).</p>
+		  <h3 class="main__title--h3--sub">Позиционирование карты </h3>
+		  <p>Позиция тайла на карте определяется [Координатами на Карте]. начало системы отсчета расположено в левом верхнем углу карты (0,0), следовательно, координата X растет вправо, а координата Y - вниз. Например, на карте размера 100x100, координата нижнего правого угла будет = (99,99). Координату тайла, который в данный момент редактируется вы можете посмотреть на Панели статуса.<br />
 		    <br />
-		    Map coordinates can be used in event commands which monitor the current location of your party and the locations where a party moves based on variables. </p>
+		    Координаты на карте могут быть использованы в ивентах, алгоритм которых предусматривает отслеживание позиции игрока на карте. Для этого вам также понадобятся переменные. </p>
 		</div><!-- /main__section -->
 
 
