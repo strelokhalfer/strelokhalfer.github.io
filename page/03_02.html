@@ -20,8 +20,8 @@
 		<p>The static class that carries out graphics processing.</p>
 
 		<div class="main__section">
-			<h2 class="main__title--h2">Item Index</h2>
-			<b>Methods</b>
+			<h2 class="main__title--h2">Содержание</h2>
+			<b>Методы</b>
 			<ul class="main__ul--inline">
 				<li><a href="#m01">canPlayVideoType</a> <span>static</span></li>
 				<li><a href="#m02">canUseDifferenceBlend</a> <span>static</span></li>
@@ -48,7 +48,7 @@
 				<li><a href="#m23">updateLoading</a> <span>static</span></li>
 			</ul>
 
-			<b>Properties</b>
+			<b>Аттрибуты</b>
 			<ul class="main__ul--inline">
 				<li><a href="#p01">BLEND_ADD</a> <span>static</span></li>
 				<li><a href="#p02">BLEND_MULTIPLY</a> <span>static</span></li>
@@ -65,7 +65,7 @@
 
 
 		<div class="main__section">
-			<h2 class="main__title--h2">Methods</h2>
+			<h2 class="main__title--h2">Методы</h2>
 
 			<div id="m01" class="main__subsection">
 <pre class="main__pre--code">
@@ -73,17 +73,17 @@ canPlayVideoType ( type ) <span class="pre__type">Boolean</span> <span class="pr
 </pre>
 				<p class="mb10px">Checks whether the browser can play the specified video type.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">type</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The video type to test support for</p>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span> <br />
 					True if the browser can play the specified video type</p>
 				</div>
@@ -95,7 +95,7 @@ canUseDifferenceBlend () <span class="pre__type">Boolean</span> <span class="pre
 </pre>
 				<p class="mb10px">Checks whether the canvas blend mode 'difference' is supported.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the canvas blend mode 'difference' is supported</p>
 				</div>
@@ -107,7 +107,7 @@ canUseSaturationBlend () <span class="pre__type">Boolean</span> <span class="pre
 </pre>
 				<p class="mb10px">Checks whether the canvas blend mode 'saturation' is supported.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the canvas blend mode 'saturation' is supported</p>
 				</div>
@@ -126,7 +126,7 @@ hasWebGL () <span class="pre__type">Boolean</span> <span class="pre__static">[st
 </pre>
 				<p class="mb10px">Checks whether the current browser supports WebGL.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the current browser supports WebGL.</p>
 				</div>
@@ -145,7 +145,7 @@ initialize ( width , height , type ) <span class="pre__static">[static]</span>
 </pre>
 				<p class="mb10px">Initializes the graphics system.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">width</code>
@@ -163,7 +163,7 @@ initialize ( width , height , type ) <span class="pre__static">[static]</span>
 						</li>
 						<li class="param">
 							<code class="param-name">type</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The type of the renderer. 'canvas', 'webgl', or 'auto'.</p>
 							</div>
@@ -178,17 +178,17 @@ isFontLoaded ( name ) <span class="pre__type">Boolean</span> <span class="pre__s
 </pre>
 				<p class="mb10px">Checks whether the font file is loaded.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">name</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The face name of the font</p>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the font file is loaded</p>
 				</div>
@@ -200,7 +200,7 @@ isInsideCanvas ( x , y ) <span class="pre__type">Boolean</span> <span class="pre
 </pre>
 				<p class="mb10px">Checks whether the specified point is inside the game canvas area.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">x</code>
@@ -217,7 +217,7 @@ isInsideCanvas ( x , y ) <span class="pre__type">Boolean</span> <span class="pre
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the specified point is inside the game canvas area</p>
 				</div>
@@ -229,7 +229,7 @@ isVideoPlaying () <span class="pre__type">Boolean</span> <span class="pre__stati
 </pre>
 				<p class="mb10px">Checks whether the video is playing.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the video is playing</p>
 				</div>
@@ -241,7 +241,7 @@ isWebGL () <span class="pre__type">Boolean</span> <span class="pre__static">[sta
 </pre>
 				<p class="mb10px">Checks whether the renderer type is WebGL.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the renderer type is WebGL</p>
 				</div>
@@ -253,18 +253,18 @@ loadFont ( name , url ) <span class="pre__static">[static]</span>
 </pre>
 				<p class="mb10px">Loads a font file.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">name</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The face name of the font</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">url</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The url of the font file</p>
 							</div>
@@ -279,7 +279,7 @@ pageToCanvasX ( x ) <span class="pre__type">Number</span> <span class="pre__stat
 </pre>
 				<p class="mb10px">Converts an x coordinate on the page to the corresponding x coordinate on the canvas area.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">x</code>
@@ -289,7 +289,7 @@ pageToCanvasX ( x ) <span class="pre__type">Number</span> <span class="pre__stat
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Number:</span><br />
 					The x coordinate on the canvas area</p>
 				</div>
@@ -301,7 +301,7 @@ pageToCanvasY ( y ) <span class="pre__type">Number</span> <span class="pre__stat
 </pre>
 				<p class="mb10px">Converts a y coordinate on the page to the corresponding y coordinate on the canvas area.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">y</code>
@@ -311,7 +311,7 @@ pageToCanvasY ( y ) <span class="pre__type">Number</span> <span class="pre__stat
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Number:</span><br />
 					The y coordinate on the canvas area</p>
 				</div>
@@ -323,11 +323,11 @@ playVideo ( src ) <span class="pre__static">[static]</span>
 </pre>
 				<p class="mb10px">Starts playback of a video.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">src</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 						</li>
 					</ul>
 				</div>
@@ -339,18 +339,18 @@ printError ( name , message ) <span class="pre__static">[static]</span>
 </pre>
 				<p class="mb10px">Displays the error text to the screen.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">name</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The name of the error</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">message</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The message of the error</p>
 							</div>
@@ -365,7 +365,7 @@ render ( stage ) <span class="pre__static">[static]</span>
 </pre>
 				<p class="mb10px">Renders the stage to the game screen.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">stage</code>

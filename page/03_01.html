@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" id="main">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Bitmap Class</title>
+	<title>Класс Bitmap</title>
 	<link rel="stylesheet" href="../inc/css/style.min.css" />
 	<script type="text/javascript" src="../inc/js/lib/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../inc/js/common.js"></script>
@@ -11,27 +11,27 @@
 
 	<div class="main">
 
-		<h1 class="main__title--h1 main__title--h1--v07">Bitmap Class</h1>
+		<h1 class="main__title--h1 main__title--h1--v07">Класс Bitmap</h1>
 		<ul class="breadcrumb">
 			<li>JS Library</li>
 			<li>&gt;</li>
-			<li>Bitmap Class</li>
+			<li>Класс Bitmap</li>
 		</ul>
-		<p>The basic object that represents an image.</p>
+		<p>Базовый класс представления изображения.</p>
 		<div class="main__section">
-			<h2 class="main__title--h2">Constructor</h2>
+			<h2 class="main__title--h2">Конструктор</h2>
 <pre class="main__pre--code">
 Bitmap ( width , height )
 </pre>
 			<div class="params">
-				<h4>Parameters:</h4>
+				<h4>Параметры:</h4>
 
 				<ul class="params-list">
 					<li class="param">
 						<code class="param-name">width</code>
 						<span class="type">Number</span>
 						<div class="param-description">
-							<p>The width of the bitmap</p>
+							<p>Ширина</p>
 						</div>
 					</li>
 
@@ -39,7 +39,7 @@ Bitmap ( width , height )
 						<code class="param-name">height</code>
 						<span class="type">Number</span>
 						<div class="param-description">
-							<p>The height of the bitmap</p>
+							<p>Высота</p>
 						</div>
 					</li>
 				</ul>
@@ -48,8 +48,8 @@ Bitmap ( width , height )
 
 
 		<div class="main__section">
-			<h2 class="main__title--h2">Item Index</h2>
-			<b>Methods</b>
+			<h2 class="main__title--h2">Содержание</h2>
+			<b>Методы</b>
 			<ul class="main__ul--inline">
 				<li><a href="#m01">addLoadListener</a></li>
 				<li><a href="#m02">adjustTone</a></li>
@@ -73,7 +73,7 @@ Bitmap ( width , height )
 				<li><a href="#m20">snap</a> <span>static</span></li>
 			</ul>
 
-			<b>Properties</b>
+			<b>Аттрибуты</b>
 			<ul class="main__ul--inline">
 				<li><a href="#p01">baseTexture</a></li>
 				<li><a href="#p02">canvas</a></li>
@@ -95,21 +95,21 @@ Bitmap ( width , height )
 
 
 		<div class="main__section">
-			<h2 class="main__title--h2">Methods</h2>
+			<h2 class="main__title--h2">Методы</h2>
 
 			<div id="m01" class="main__subsection">
 <pre class="main__pre--code">
 addLoadListener ( listner )
 </pre>
-				<p class="mb10px">Add a callback function that will be called when the bitmap is loaded.</p>
+				<p class="mb10px">Цепляет функцию, которая будет вызвана как только изображение загрузится.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">listner</code>
-							<span class="type">Function</span>
+							<span class="type">Функция</span>
 							<div class="param-description">
-								<p>The callback function</p>
+								<p>Вызываемая функция</p>
 							</div>
 						</li>
 					</ul>
@@ -120,29 +120,29 @@ addLoadListener ( listner )
 <pre class="main__pre--code">
 adjustTone ( r , g , b )
 </pre>
-				<p class="mb10px">Changes the color tone of the entire bitmap.</p>
+				<p class="mb10px">Задать оттенок всей области изображения.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">r</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The red strength in the range (-255, 255)</p>
+								<p>Величина красной составляющей (-255, 255)</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">g</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The green strength in the range (-255, 255)</p>
+								<p>Величина зеленой составляющей (-255, 255)</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">b</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The blue strength in the range (-255, 255)</p>
+								<p>Величина синей составляющей (-255, 255)</p>
 							</div>
 						</li>
 					</ul>
@@ -153,57 +153,57 @@ adjustTone ( r , g , b )
 <pre class="main__pre--code">
 blt ( source , sx , sy , sw , sh , dx , dy , [dw=sw] , [dh=sh] )
 </pre>
-				<p class="mb10px">Performs a block transfer.</p>
+				<p class="mb10px">Переносит участок изображения и заполняет им принимающий участок.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">source</code>
 							<span class="type">Bitmap</span>
 							<div class="param-description">
-								<p>The bitmap to draw</p>
+								<p>Исходный Bitmap</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">sx</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The x coordinate in the source</p>
+								<p>Координата 'x' переносимого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">sy</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The y coordinate in the source</p>
+								<p>Координата 'y' переносимого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">sw</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The width of the source image</p>
+								<p>Ширина переносимого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">sh</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The height of the source image</p>
+								<p>Высота переносимого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">dx</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The x coordinate in the destination</p>
+								<p>Координата 'x' принимающего участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">dy</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The y coordinate in the destination</p>
+								<p>Координата 'y' принимающего участка</p>
 							</div>
 						</li>
 						<li class="param">
@@ -211,7 +211,7 @@ blt ( source , sx , sy , sw , sh , dx , dy , [dw=sw] , [dh=sh] )
 							<span class="type">Number</span>
 							<span class="type">[optional]</span>
 							<div class="param-description">
-								<p>The width to draw the image in the destination</p>
+								<p>Ширина принимающего участка</p>
 							</div>
 						</li>
 						<li class="param">
@@ -219,7 +219,7 @@ blt ( source , sx , sy , sw , sh , dx , dy , [dw=sw] , [dh=sh] )
 							<span class="type">Number</span>
 							<span class="type">[optional]</span>
 							<div class="param-description">
-								<p>The height to draw the image in the destination</p>
+								<p>Высота принимающего участка</p>
 							</div>
 						</li>
 					</ul>
@@ -230,50 +230,50 @@ blt ( source , sx , sy , sw , sh , dx , dy , [dw=sw] , [dh=sh] )
 <pre class="main__pre--code">
 blur ()
 </pre>
-				<p class="mb10px">Applies a blur effect to the bitmap.</p>
+				<p class="mb10px">Применяет к изображению размытие.</p>
 			</div><!-- /div -->
 
 			<div id="m05" class="main__subsection">
 <pre class="main__pre--code">
 clear ()
 </pre>
-				<p class="mb10px">Clears the entire bitmap.</p>
+				<p class="mb10px">Очищает изображение.</p>
 			</div><!-- /div -->
 
 			<div id="m06" class="main__subsection">
 <pre class="main__pre--code">
 clearRect ( x , y , width , height )
 </pre>
-				<p class="mb10px">Clears the specified rectangle.</p>
+				<p class="mb10px">Очищает заданную область изображения.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">x</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The x coordinate for the upper-left corner</p>
+								<p>Координата 'x' очищаемого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">y</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The y coordinate for the upper-left corner</p>
+								<p>Координата 'y' очищаемого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">width</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The width of the rectangle to clear</p>
+								<p>Ширина очищаемого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">height</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The height of the rectangle to clear</p>
+								<p>Высота очищаемого участка</p>
 							</div>
 						</li>
 					</ul>
@@ -284,36 +284,36 @@ clearRect ( x , y , width , height )
 <pre class="main__pre--code">
 drawCircle ( x , y , radius , color )
 </pre>
-				<p class="mb10px">Draw the filled circle.</p>
+				<p class="mb10px">Рисует круг.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">x</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The x coordinate of the center of the circle</p>
+								<p>Координата 'x' центра круга</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">y</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The y coordinate of the center of the circle</p>
+								<p>Координата 'y' центра круга</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">radius</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The radius of the circle</p>
+								<p>Радиус круга</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">color</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
-								<p>The color of the circle in CSS format</p>
+								<p>Цвет заливки в формате [#rrggbbaa]</p>
 							</div>
 						</li>
 					</ul>
@@ -324,50 +324,50 @@ drawCircle ( x , y , radius , color )
 <pre class="main__pre--code">
 drawText ( text , x , y , maxWidth , lineHeight , align )
 </pre>
-				<p class="mb10px">Draws the outline text to the bitmap.</p>
+				<p class="mb10px">Рисует текст с обводкой в Bitmap.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">text</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
-								<p>The text that will be drawn</p>
+								<p>Текст</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">x</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The x coordinate for the left of the text</p>
+								<p>Координата 'x' левой границы текста</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">y</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The y coordinate for the top of the text</p>
+								<p>Координата 'y' верхней границы текста</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">maxWidth</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The maximum allowed width of the text</p>
+								<p>Ограничение текста по ширине</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">lineHeight</code>
 							<span class="type"Number></span>
 							<div class="param-description">
-								<p>The height of the text line</p>
+								<p>Ограничение текста по высоте</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">align</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
-								<p>The alignment of the text</p>
+								<p>Выравнивание текста (left, center, right и т.д.)</p>
 							</div>
 						</li>
 					</ul>
@@ -378,15 +378,15 @@ drawText ( text , x , y , maxWidth , lineHeight , align )
 <pre class="main__pre--code">
 fillAll ( color )
 </pre>
-				<p class="mb10px">Fills the entire bitmap.</p>
+				<p class="mb10px">Заливает Bitmap цветом.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">color</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
-								<p>The color of the rectangle in CSS format</p>
+								<p>Цвет заливки в формате [#rrggbbaa]</p>
 							</div>
 						</li>
 					</ul>
@@ -397,43 +397,43 @@ fillAll ( color )
 <pre class="main__pre--code">
 fillRect ( x , y , width , height , color )
 </pre>
-				<p class="mb10px">Fills the specified rectangle.</p>
+				<p class="mb10px">Заливает цветом участок изображения</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">x</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The x coordinate for the upper-left corner</p>
+								<p>Координата 'x' заливаемого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">y</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The y coordinate for the upper-left corner</p>
+								<p>Координата 'y' заливаемого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">width</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The width of the rectangle to clear</p>
+								<p>Ширина заливаемого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">height</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The height of the rectangle to clear</p>
+								<p>Высота заливаемого участка</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">color</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
-								<p>The color of the rectangle in CSS format</p>
+								<p>Цвет заливки в формате [#rrggbbaa]</p>
 							</div>
 						</li>
 					</ul>
@@ -444,28 +444,28 @@ fillRect ( x , y , width , height , color )
 <pre class="main__pre--code">
 getAlphaPixel ( x , y ) <span class="pre__type">String</span>
 </pre>
-				<p class="mb10px">Returns alpha pixel value at the specified point.</p>
+				<p class="mb10px">Возвращает значение прозрачности пикселя.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">x</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The x coordinate of the pixel in the bitmap</p>
+								<p>сКоордината 'x' пикеля</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">y</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The y coordinate of the pixel in the bitmap</p>
+								<p>Координата 'y' пикселя</p>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
-					<p><span class="pre__type">String:</span><br />
-					The alpha value</p>
+					<h4>Возвращает:</h4>
+					<p><span class="pre__type">Строка:</span><br />
+					Значение прозрачности</p>
 				</div>
 			</div><!-- /div -->
 
@@ -473,28 +473,28 @@ getAlphaPixel ( x , y ) <span class="pre__type">String</span>
 <pre class="main__pre--code">
 getPixel ( x , y ) <span class="pre__type">String</span>
 </pre>
-				<p class="mb10px">Returns pixel color at the specified point.</p>
+				<p class="mb10px">Возвращает цвет пикселя.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">x</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The x coordinate of the pixel in the bitmap</p>
+								<p>Координата 'x' пикеля</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">y</code>
 							<span class="type">Number</span>
 							<div class="param-description">
-								<p>The y coordinate of the pixel in the bitmap</p>
+								<p>Координата 'y' пикселя</p>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
-					<p><span class="pre__type">String:</span><br />
-					The pixel color (hex format)</p>
+					<h4>Возвращает:</h4>
+					<p><span class="pre__type">Строка:</span><br />
+					Цвет пикселя в формате [#rrggbb]</p>
 				</div>
 			</div><!-- /div -->
 
@@ -502,9 +502,9 @@ getPixel ( x , y ) <span class="pre__type">String</span>
 <pre class="main__pre--code">
 gradientFillRect ( x , y , width , height , color1 , color2 , vertical )
 </pre>
-				<p class="mb10px">Draws the rectangle with a gradation.</p>
+				<p class="mb10px">Заливает участок изображения градиентом.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">x</code>
@@ -536,14 +536,14 @@ gradientFillRect ( x , y , width , height , color1 , color2 , vertical )
 						</li>
 						<li class="param">
 							<code class="param-name">color1</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The start color of the gradation</p>
 							</div>
 						</li>
 						<li class="param">
 							<code class="param-name">color2</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The end color of the gradation</p>
 							</div>
@@ -565,7 +565,7 @@ isError () <span class="pre__type">Boolean</span>
 </pre>
 				<p class="mb10px">Checks whether a loading error has occurred.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if a loading error has occurred</p>
 				</div>
@@ -577,7 +577,7 @@ isReady () <span class="pre__type">Boolean</span>
 </pre>
 				<p class="mb10px">Checks whether the bitmap is ready to render.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the bitmap is ready to render</p>
 				</div>
@@ -587,19 +587,19 @@ isReady () <span class="pre__type">Boolean</span>
 <pre class="main__pre--code">
 load ( url ) <span class="pre__static">[static]</span>
 </pre>
-				<p class="mb10px">Loads a image file and returns a new bitmap object.</p>
+				<p class="mb10px">Loads a image file and Возвращает a new bitmap object.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">url</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The image url of the texture</p>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Bitmap</span></p>
 				</div>
 			</div><!-- /div -->
@@ -608,19 +608,19 @@ load ( url ) <span class="pre__static">[static]</span>
 <pre class="main__pre--code">
 measureTextWidth ( text ) <span class="pre__type">Number</span>
 </pre>
-				<p class="mb10px">Returns the width of the specified text.</p>
+				<p class="mb10px">Возвращает the width of the specified text.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">text</code>
-							<span class="type">String</span>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The text to be measured</p>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Number:</span> <br />
 					The width of the text in pixels</p>
 				</div>
@@ -632,7 +632,7 @@ resize ( width , height )
 </pre>
 				<p class="mb10px">Resizes the bitmap.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">width</code>
@@ -658,7 +658,7 @@ rotateHue ( offset )
 </pre>
 				<p class="mb10px">Rotates the hue of the entire bitmap.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">offset</code>
@@ -675,9 +675,9 @@ rotateHue ( offset )
 <pre class="main__pre--code">
 snap ( stage ) <span class="pre__static">[static]</span>
 </pre>
-				<p class="mb10px">Takes a snapshot of the game screen and returns a new bitmap object.</p>
+				<p class="mb10px">Takes a snapshot of the game screen and Возвращает a new bitmap object.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">stage</code>
@@ -687,7 +687,7 @@ snap ( stage ) <span class="pre__static">[static]</span>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Bitmap</span></p>
 				</div>
 			</div><!-- /div -->
@@ -700,21 +700,21 @@ snap ( stage ) <span class="pre__static">[static]</span>
 <pre class="main__pre--code">
 baseTexture <span class="pre__type">PIXI.BaseTexture</span>
 </pre>
-				<p class="mb10px">[read-only] The base texture that holds the image.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The base texture that holds the image.</p>
 			</div><!-- /div -->
 
 			<div id="p02" class="main__subsection">
 <pre class="main__pre--code">
 canvas <span class="pre__type">HTMLCanvasElement</span>
 </pre>
-				<p class="mb10px">[read-only] The bitmap canvas.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The bitmap canvas.</p>
 			</div><!-- /div -->
 
 			<div id="p03" class="main__subsection">
 <pre class="main__pre--code">
 context <span class="pre__type">CanvasRenderingContext2D</span>
 </pre>
-				<p class="mb10px">[read-only] The 2d context of the bitmap canvas.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The 2d context of the bitmap canvas.</p>
 			</div><!-- /div -->
 
 			<div id="p04" class="main__subsection">
@@ -742,7 +742,7 @@ fontSize <span class="pre__type">Number</span>
 <pre class="main__pre--code">
 height <span class="pre__type">Number</span>
 </pre>
-				<p class="mb10px">[read-only] The height of the bitmap.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The height of the bitmap.</p>
 			</div><!-- /div -->
 
 			<div id="p08" class="main__subsection">
@@ -770,7 +770,7 @@ paintOpacity <span class="pre__type">Number</span>
 <pre class="main__pre--code">
 rect <span class="pre__type">Rectangle</span>
 </pre>
-				<p class="mb10px">[read-only] The rectangle of the bitmap.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The rectangle of the bitmap.</p>
 			</div><!-- /div -->
 
 			<div id="p12" class="main__subsection">
@@ -791,14 +791,14 @@ textColor <span class="pre__type">String</span>
 <pre class="main__pre--code">
 url <span class="pre__type">String</span>
 </pre>
-				<p class="mb10px">[read-only] The url of the image file.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The url of the image file.</p>
 			</div><!-- /div -->
 
 			<div id="p15" class="main__subsection">
 <pre class="main__pre--code">
 width <span class="pre__type">Number</span>
 </pre>
-				<p class="mb10px">[read-only] The width of the bitmap.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The width of the bitmap.</p>
 			</div><!-- /div -->
 
 
