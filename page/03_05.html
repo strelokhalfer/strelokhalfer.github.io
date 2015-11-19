@@ -17,12 +17,12 @@
 			<li>&gt;</li>
 			<li>JsExtensions Class</li>
 		</ul>
-		<p>This is not a class, but contains some methods that will be added to the standard Javascript objects.</p>
+		<p>This is not a class, but contains some Методы that will be added to the standard Javascript objects.</p>
 
 
 		<div class="main__section">
-			<h2 class="main__title--h2">Item Index</h2>
-			<b>Methods</b>
+			<h2 class="main__title--h2">Содержание</h2>
+			<b>Методы</b>
 			<ul class="main__ul--inline">
 				<li><a href="#m01">Array.prototype.clone</a></li>
 				<li><a href="#m02">Array.prototype.contains</a></li>
@@ -31,9 +31,9 @@
 				<li><a href="#m05">Number.prototype.clamp</a></li>
 				<li><a href="#m06">Number.prototype.mod</a></li>
 				<li><a href="#m07">Number.prototype.padZero</a></li>
-				<li><a href="#m08">String.prototype.contains</a></li>
-				<li><a href="#m09">String.prototype.format</a></li>
-				<li><a href="#m10">String.prototype.padZero</a></li>
+				<li><a href="#m08">Строка.prototype.contains</a></li>
+				<li><a href="#m09">Строка.prototype.format</a></li>
+				<li><a href="#m10">Строка.prototype.padZero</a></li>
 			</ul>
 		</div><!-- /main__section -->
 
@@ -44,7 +44,7 @@ Array.prototype.clone () <span class="pre__type">Array</span>
 </pre>
 				<p class="mb10px">Makes a shallow copy of the array.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Array:</span> <br />
 					A shallow copy of the array</p>
 				</div>
@@ -56,7 +56,7 @@ Array.prototype.contains ( element ) <span class="pre__type">Boolean</span>
 </pre>
 				<p class="mb10px">Checks whether the array contains a given element.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">element</code>
@@ -66,7 +66,7 @@ Array.prototype.contains ( element ) <span class="pre__type">Boolean</span>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span> <br />
 					True if the array contains a given element</p>
 				</div>
@@ -78,7 +78,7 @@ Array.prototype.equals ( array ) <span class="pre__type">Boolean</span>
 </pre>
 				<p class="mb10px">Checks whether the two arrays are same.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">array</code>
@@ -88,7 +88,7 @@ Array.prototype.equals ( array ) <span class="pre__type">Boolean</span>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span> <br />
 					True if the two arrays are same</p>
 				</div>
@@ -100,7 +100,7 @@ Math.randomInt ( max ) <span class="pre__type">Number</span> <span class="pre__s
 </pre>
 				<p class="mb10px">Generates a random integer in the range (0, max-1).</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">max</code>
@@ -110,7 +110,7 @@ Math.randomInt ( max ) <span class="pre__type">Number</span> <span class="pre__s
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Number:</span> <br />
 					A random integer</p>
 				</div>
@@ -120,9 +120,9 @@ Math.randomInt ( max ) <span class="pre__type">Number</span> <span class="pre__s
 <pre class="main__pre--code">
 Number.prototype.clamp ( min , max ) <span class="pre__type">Number</span>
 </pre>
-				<p class="mb10px">Returns a number whose value is limited to the given range.</p>
+				<p class="mb10px">Возвращает a Number whose value is limited to the given range.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">min</code>
@@ -139,9 +139,9 @@ Number.prototype.clamp ( min , max ) <span class="pre__type">Number</span>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Number:</span> <br />
-					A number in the range (min, max)</p>
+					A Number in the range (min, max)</p>
 				</div>
 			</div><!-- /div -->
 
@@ -149,9 +149,9 @@ Number.prototype.clamp ( min , max ) <span class="pre__type">Number</span>
 <pre class="main__pre--code">
 Number.prototype.mod ( n ) <span class="pre__type">Number</span>
 </pre>
-				<p class="mb10px">Returns a modulo value which is always positive.</p>
+				<p class="mb10px">Возвращает a modulo value which is always positive.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">n</code>
@@ -161,7 +161,7 @@ Number.prototype.mod ( n ) <span class="pre__type">Number</span>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Number:</span> <br />
 					A modulo value</p>
 				</div>
@@ -171,9 +171,9 @@ Number.prototype.mod ( n ) <span class="pre__type">Number</span>
 <pre class="main__pre--code">
 Number.prototype.padZero ( length ) <span class="pre__type">String</span>
 </pre>
-				<p class="mb10px">Makes a number string with leading zeros.</p>
+				<p class="mb10px">Makes a Number string with leading zeros.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">length</code>
@@ -183,8 +183,8 @@ Number.prototype.padZero ( length ) <span class="pre__type">String</span>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
-					<p><span class="pre__type">String:</span> <br />
+					<h4>Возвращает:</h4>
+					<p><span class="pre__type">Строка:</span> <br />
 					A string with leading zeros</p>
 				</div>
 			</div><!-- /div -->
@@ -195,17 +195,17 @@ String.prototype.contains ( string ) <span class="pre__type">Boolean</span>
 </pre>
 				<p class="mb10px">Checks whether the string contains a given string.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
-							<code class="param-name">string</code>
-							<span class="type">String</span>
+							<code class="param-name">Строка</code>
+							<span class="type">Строка</span>
 							<div class="param-description">
 								<p>The string to search for</p>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span> <br />
 					True if the string contains a given string</p>
 				</div>
@@ -217,7 +217,7 @@ String.prototype.format ( ...args ) <span class="pre__type">String</span>
 </pre>
 				<p class="mb10px">Replaces %1, %2 and so on in the string to the arguments.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">...args</code>
@@ -227,8 +227,8 @@ String.prototype.format ( ...args ) <span class="pre__type">String</span>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
-					<p><span class="pre__type">String:</span> <br />
+					<h4>Возвращает:</h4>
+					<p><span class="pre__type">Строка:</span> <br />
 					A formatted string</p>
 				</div>
 			</div><!-- /div -->
@@ -237,9 +237,9 @@ String.prototype.format ( ...args ) <span class="pre__type">String</span>
 <pre class="main__pre--code">
 String.prototype.padZero ( length ) <span class="pre__type">String</span>
 </pre>
-				<p class="mb10px">Makes a number string with leading zeros.</p>
+				<p class="mb10px">Makes a Number string with leading zeros.</p>
 				<div class="params">
-					<h4>Parameters:</h4>
+					<h4>Параметры:</h4>
 					<ul class="params-list">
 						<li class="param">
 							<code class="param-name">length</code>
@@ -249,8 +249,8 @@ String.prototype.padZero ( length ) <span class="pre__type">String</span>
 							</div>
 						</li>
 					</ul>
-					<h4>Returns:</h4>
-					<p><span class="pre__type">String:</span> <br />
+					<h4>Возвращает:</h4>
+					<p><span class="pre__type">Строка:</span> <br />
 					A string with leading zeros</p>
 				</div>
 			</div><!-- /div -->

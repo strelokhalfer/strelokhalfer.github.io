@@ -20,8 +20,8 @@
 		<p>The static class that handles input data from the mouse and touchscreen.</p>
 
 		<div class="main__section">
-			<h2 class="main__title--h2">Item Index</h2>
-			<b>Methods</b>
+			<h2 class="main__title--h2">Содержание</h2>
+			<b>Методы</b>
 			<ul class="main__ul--inline">
 				<li><a href="#m01">clear</a> <span>static</span></li>
 				<li><a href="#m02">initialize</a> <span>static</span></li>
@@ -35,7 +35,7 @@
 				<li><a href="#m10">update</a> <span>static</span></li>
 			</ul>
 
-			<b>Properties</b>
+			<b>Аттрибуты</b>
 			<ul class="main__ul--inline">
 				<li><a href="#p01">date</a> <span>static</span></li>
 				<li><a href="#p02">keyRepeatInterval</a> <span>static</span></li>
@@ -49,7 +49,7 @@
 
 
 		<div class="main__section">
-			<h2 class="main__title--h2">Methods</h2>
+			<h2 class="main__title--h2">Методы</h2>
 
 			<div id="m01" class="main__subsection">
 <pre class="main__pre--code">
@@ -71,7 +71,7 @@ isCancelled () <span class="pre__type">Boolean</span> <span class="pre__static">
 </pre>
 				<p class="mb10px">Checks whether the right mouse button is just pressed.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the right mouse button is just pressed</p>
 				</div>
@@ -83,7 +83,7 @@ isLongPressed () <span class="pre__type">Boolean</span> <span class="pre__static
 </pre>
 				<p class="mb10px">Checks whether the left mouse button or touchscreen is kept depressed.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the left mouse button or touchscreen is long-pressed</p>
 				</div>
@@ -95,7 +95,7 @@ isMoved () <span class="pre__type">Boolean</span> <span class="pre__static">[sta
 </pre>
 				<p class="mb10px">Checks whether the mouse or a finger on the touchscreen is moved.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the mouse or a finger on the touchscreen is moved</p>
 				</div>
@@ -107,7 +107,7 @@ isPressed () <span class="pre__type">Boolean</span> <span class="pre__static">[s
 </pre>
 				<p class="mb10px">Checks whether the mouse button or touchscreen is currently pressed down.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the mouse button or touchscreen is pressed</p>
 				</div>
@@ -119,7 +119,7 @@ isReleased () <span class="pre__type">Boolean</span> <span class="pre__static">[
 </pre>
 				<p class="mb10px">Checks whether the left mouse button or touchscreen is released.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the mouse button or touchscreen is released</p>
 				</div>
@@ -131,7 +131,7 @@ isRepeated () <span class="pre__type">Boolean</span> <span class="pre__static">[
 </pre>
 				<p class="mb10px">Checks whether the left mouse button or touchscreen is just pressed or a pseudo key repeat occurred.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the mouse button or touchscreen is repeated</p>
 				</div>
@@ -143,7 +143,7 @@ isTriggered () <span class="pre__type">Boolean</span> <span class="pre__static">
 </pre>
 				<p class="mb10px">Checks whether the left mouse button or touchscreen is just pressed.</p>
 				<div class="params">
-					<h4>Returns:</h4>
+					<h4>Возвращает:</h4>
 					<p><span class="pre__type">Boolean:</span><br />
 					True if the mouse button or touchscreen is triggered</p>
 				</div>
@@ -166,7 +166,7 @@ update () <span class="pre__static">[static]</span>
 <pre class="main__pre--code">
 date <span class="pre__type">Number</span> <span class="pre__static">[static]</span>
 </pre>
-				<p class="mb10px">[read-only] The time of the last input in milliseconds.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The time of the last input in milliseconds.</p>
 			</div><!-- /div -->
 
 			<div id="p02" class="main__subsection">
@@ -187,28 +187,28 @@ keyRepeatWait <span class="pre__type">Number</span> <span class="pre__static">[s
 <pre class="main__pre--code">
 wheelX <span class="pre__type">Number</span> <span class="pre__static">[static]</span>
 </pre>
-				<p class="mb10px">[read-only] The horizontal scroll amount.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The horizontal scroll amount.</p>
 			</div><!-- /div -->
 
 			<div id="p05" class="main__subsection">
 <pre class="main__pre--code">
 wheelY <span class="pre__type">Number</span> <span class="pre__static">[static]</span>
 </pre>
-				<p class="mb10px">[read-only] The vertical scroll amount.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The vertical scroll amount.</p>
 			</div><!-- /div -->
 
 			<div id="p06" class="main__subsection">
 <pre class="main__pre--code">
 x <span class="pre__type">Number</span> <span class="pre__static">[static]</span>
 </pre>
-				<p class="mb10px">[read-only] The x coordinate on the canvas area of the latest touch event.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The x coordinate on the canvas area of the latest touch event.</p>
 			</div><!-- /div -->
 
 			<div id="p07" class="main__subsection">
 <pre class="main__pre--code">
 y <span class="pre__type">Number</span> <span class="pre__static">[static]</span>
 </pre>
-				<p class="mb10px">[read-only] The y coordinate on the canvas area of the latest touch event.</p>
+				<p class="mb10px"><font color="red">[только для чтения]</font> The y coordinate on the canvas area of the latest touch event.</p>
 			</div><!-- /div -->
 
 
